@@ -1,0 +1,79 @@
+.logo-container img {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  object-fit: cover;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  width: 30vw;
+  padding: 5%;
+  margin: 0% 20%;
+  font-size: 1em;
+  z-index: 1;
+}
+
+.login-form h3 {
+  text-align: center;
+  color: #101935;
+}
+
+.login-form .form-group .form-control {
+  background: #c9e8f2;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 5px 15px;
+  font-size: 1em;
+  box-shadow: -1px -1px 4px #8da2a9, 1px 1px 4px #ffff;
+  color: #101935;
+}
+
+.login-form .form-group label {
+  text-align: start;
+  color: #101935;
+}
+
+.btnSubmit {
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  border: none;
+  cursor: pointer;
+  margin-left: 25%;
+  text-align: center;
+  background: #c9e8f2;
+  outline: none;
+  font-size: 1.2em;
+  box-shadow: inset -1px -1px 4px #8da2a9, inset 1px 1px 4px #ffff;
+  color: #101935;
+}
+
+.btnSubmit:hover {
+  box-shadow: -1px -1px 4px #8da2a9, 1px 1px 4px #ffff;
+  border: 1px solid #789ca9;
+}
+
+
+@media screen and (max-width: 768px) {
+  .login-form {
+    width: 100vw;
+    margin: 25% 15% 25% 10%;
+  }
+
+  .login-form .form-group input[type="text"] {
+    font-size: 0.8em;
+    width: 110%;
+  }
+  .login-form .form-group input[type="password"] {
+    font-size: 0.8em;
+    width: 110%;
+  }
+
+}

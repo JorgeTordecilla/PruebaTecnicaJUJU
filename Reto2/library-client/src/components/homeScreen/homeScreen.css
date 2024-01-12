@@ -1,0 +1,130 @@
+.logo-container img {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  object-fit: cover;
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  width: 40vw;
+  padding: 5%;
+  margin: 5% 20%;
+  font-size: 1em;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columnas */
+  grid-template-rows: 1fr 1fr; /* 2 filas */
+  grid-gap: 10px; /* Espacio entre los elementos (opcional) */
+}
+
+.grid-item {
+  display: flex;
+  padding: 10px;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: row;
+}
+
+.grid-item {
+  display: flex;
+  padding: 10px;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.grid-item:hover {
+  background-color: rgba(141, 162, 169, 0.1);
+  border-radius: 10%;
+}
+
+.grid-item h6 {
+  color: #101935;
+  padding: 10px;
+}
+
+.icon-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 0.5rem;
+  border: none;
+  text-align: center;
+  background: #c9e8f2;
+  outline: none;
+  font-size: 1.2em;
+  box-shadow: inset -1px -1px 4px #8da2a9, inset 1px 1px 4px #ffff;
+  color: #101935;
+}
+
+.icon-container img {
+  margin-top: 20%;
+  text-align: center;
+  width: 60%;
+  object-fit: cover;
+}
+
+/* .icon-container:hover {
+  box-shadow: -1px -1px 4px #8da2a9, 1px 1px 4px #ffff;
+} */
+
+.image-container img {
+  position: absolute;
+  bottom: 0;
+  left: 75vw;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.waves-container img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  transform: rotateY(180deg);
+}
+
+.h1-corner {
+  text-align: center;
+  position: absolute;
+  bottom: 15vh;
+  right: 60vw;
+  margin: 0;
+  padding: 0px 10px;
+  color: #fff;
+  font-family: "Hammersmith One";
+  font-size: 5rem;
+}
+.h1-corner span {
+  font-size: 2rem;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    width: 100vw;
+    padding: auto;
+    display: inline;
+    margin: 25% 15%;
+  }
+
+  .image-container img {
+    left: 55vw;
+    height: 30vh;
+  }
+
+  .h1-corner {
+    bottom: 5vh;
+    right: 40vw;
+    font-size: 1.5rem;
+  }
+  .h1-corner span {
+    font-size: 0.8rem;
+  }
+}
